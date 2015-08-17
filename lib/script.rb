@@ -1,2 +1,2 @@
-require_relative 'board'
-require_relative 'piece'
+require_relative 'slidingpiece'
+require_relative 'singlesteppiece'
