@@ -1,4 +1,5 @@
 This project aims to model a Chess game between a Human and Computer player.
+![ScreenShot](/images/preview.png)
 
 Run from the command line with
 
