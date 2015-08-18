@@ -25,6 +25,7 @@ class HumanPlayer < Player
   end
 
   def get_move(board)
+    print "Make your move: "
     move = gets
     start, target = [], []
     start, target = [move[0].to_i,move[2].to_i], [move[4].to_i,move[6].to_i]
