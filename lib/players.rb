@@ -73,6 +73,9 @@ class ComputerPlayer < Player
         best_target = pos
       end
     end
+    if farthest_row == 0
+      best_target = piece.pathspace(board).sample
+    end
     best_target
   end
 

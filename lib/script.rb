@@ -1,8 +1,7 @@
 require_relative 'piece'
 require_relative 'board'
 require_relative 'game'
-
-
+require 'byebug'
 
 board = Board.new
 game = Game.new(board)
@@ -14,6 +13,7 @@ until game.game_over?
 move = game.current_player.get_move(board)
 
   until board.valid_move?(move, game.current_player)
+    # debugger
     puts "Invalid Move"
     move = game.current_player.get_move(board)
   end
