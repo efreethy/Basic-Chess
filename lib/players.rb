@@ -1,5 +1,6 @@
 require_relative 'board'
 require_relative 'piece'
+require 'byebug'
 
 class Player
   attr_accessor :available_pieces, :color
@@ -43,6 +44,7 @@ class ComputerPlayer < Player
   end
 
   def get_move(board)
+  #  debugger
     best_piece = select_largest_pathspace(board)
     start = best_piece.pos
     target = find_farthest_target(best_piece, board)

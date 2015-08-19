@@ -9,7 +9,6 @@ game = Game.new(board)
 game.load_pieces
 game.load_players
 
-game.board.print
 until game.game_over?
 move = game.current_player.get_move(board)
 
