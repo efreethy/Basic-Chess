@@ -28,7 +28,7 @@ class King < SingleStepPiece
   end
 
   def to_s
-    color == :white ? "wK" : "bK"
+    color == :white ? "♔" : "♚"
   end
 
 end
@@ -36,7 +36,7 @@ end
 class Pawn < SingleStepPiece
 
    @@permitted_directions = []
-   
+
    def initialize(options = {})
      defaults = { color: :white }
      options = defaults.merge(options)
@@ -75,7 +75,7 @@ class Pawn < SingleStepPiece
   end
 
   def to_s
-    color == :white ? "wP" : "bP"
+    color == :white ? "♙" : "♟"
   end
 
 end
@@ -98,7 +98,7 @@ class Horse  < SingleStepPiece
   end
 
   def to_s
-    color == :white ? "wH" : "bH"
+    color == :white ? "♘" : "♞"
   end
 
 end

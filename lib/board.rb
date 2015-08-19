@@ -54,13 +54,13 @@ class Board
       line = ""
       m = 0
       row.each do |el|
-        el = "  " if el == nil
+        el = " " if el == nil
         line += "|" + el.to_s
       end
       puts "#{i} #{line}|"
       i += 1
     end
-    puts "    0  1  2  3  4  5  6  7"
+    puts "   0 1 2 3 4 5 6 7"
   end
 
   # these bracket methods should be fed arrays ie) if pos = [2,4] -> @grid[pos]

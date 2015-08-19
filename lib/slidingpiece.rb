@@ -47,7 +47,7 @@ class Queen < SlidingPiece
   end
 
   def to_s
-    color == :white ? "wQ" : "bQ"
+    color == :white ? "♕" : "♛"
   end
 
 end
@@ -60,7 +60,7 @@ class Bishop < SlidingPiece
   end
 
   def to_s
-    color == :white ? "wB" : "bB"
+    color == :white ? "♗" : "♝"
   end
 
 end
@@ -73,7 +73,7 @@ class Rook < SlidingPiece
   end
 
   def to_s
-    color == :white ? "wR" : "bR"
+    color == :white ? "♖" : "♜"
   end
 
 end

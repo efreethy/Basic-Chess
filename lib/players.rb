@@ -61,6 +61,7 @@ class ComputerPlayer < Player
          best_piece = piece
        end
      end
+
      best_piece
   end
 
